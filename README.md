@@ -1,8 +1,6 @@
-# OrlandoTechMeetups
+# Orlando Tech Meetups
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/orlando_tech_meetups`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This Ruby Gem provides a CLI to learn about the different tech meetups in the central FL/Orlando area. 
 
 ## Installation
 
@@ -22,7 +20,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Type the below and follow the on screen prompts.
+
+$ orlando_tech_meetups
 
 ## Development
 
