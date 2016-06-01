@@ -1,5 +1,2 @@
-require "orlando_tech_meetups/version"
-
-module OrlandoTechMeetups
-  # Your code goes here...
-end
+require_relative "./orlando_tech_meetups/version"
+require_relative './orlando_tech_meetups/cli'
