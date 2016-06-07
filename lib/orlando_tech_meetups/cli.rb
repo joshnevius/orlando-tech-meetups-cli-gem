@@ -1,18 +1,15 @@
-class OrlandoTechMeetups::CLI
+class OrlandoTechMeetups::CLI 
 
   def call
-    greeting
     list_meetups
     menu
   end
 
   def menu
-    input = gets.strip
-
-    case input
-      
-      when '0'
-        end_gem
+    input = nil
+    while input != "exit" 
+      input = gets.strip.downcase
+      case input
       when '1'
         more_info
       when '2'
@@ -47,28 +44,19 @@ class OrlandoTechMeetups::CLI
         more_info
       when '17'
         more_info
-      else
-        puts "Sorry. We don't have that option yet." 
-        puts "To get a meetup added, go to github.com/joshnevius and reach out to the creator."
+      when 'menu'
         list_meetups
-        menu
+      else 'exit' || list_meetups
+        puts "To get a meetup added, go to github.com/joshnevius and reach out to the creator."
       end
-  end
-
-  def greeting
-    puts "Hello and Welcome to the Orlando Tech Scene!"
+    end
   end
 
   def list_meetups
+    puts "Hello and Welcome to the Orlando Tech Scene!"
     puts "Which tech meetup/group are you interested in learning about?" 
-    puts "Enter 1 - 17. To exit, enter 0."
     meetups
   end
-
-  def end_gem
-    puts "Peace out, cub scout."
-  end
-
 
   def meetups
     puts <<-DOC
@@ -93,11 +81,12 @@ class OrlandoTechMeetups::CLI
   end
 
   def more_info
-    puts "Would you like to learn more about this upcoming meetup? y/n"
+    puts "Would you like to join this upcoming meetup? y/n"
     input = gets.strip
-    if input = "y"
+    if input == "y"
       puts "Copy and paste this link into your browser and go RSVP."
-    elsif input = "n"
+      puts "Enter 1 - 17. To return to menum type 'menu'. To exit, type 'exit'."
+    elsif input == "n"
       list_meetups
     else
       puts "I have no clue what you're trying to do."
