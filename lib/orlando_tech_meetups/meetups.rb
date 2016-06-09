@@ -3,24 +3,6 @@ class OrlandoTechMeetups::Meetups
 
   def self.all
     self.meetup_scraper
-    #puts <<-DOC
-    #1. Orlando Tech
-    #2. Orlando Developers Meetup
-    #3. Code For Orlando
-    #4. The Iron Yard - Orlando
-    #5. Front End Orlando
-    #6. Downtown UX Meetup
-    #7. The Orlando Python User Group
-    #8. Orlando MongoDB Group
-    #9. Orlando Ruby Users Group
-    #10. Orlando PHP Users Group
-    #11. Central Florida Android Developers Group
-    #12. OrlandoJS
-    #13. Orlando Coding Dojo
-    #14. Central Florida Raspberry Pi Users Group
-    #15. Orlando iOS Developer Group
-    #16. Internet of Things (IoT) Orlando
-    #DOC
   end
 
   def self.meetup_scraper
@@ -235,10 +217,5 @@ class OrlandoTechMeetups::Meetups
     meetup.url = "http://www.meetup.com/iot-orlando/"
     meetup 
   end
-
-  
-
-
-  
 
 end
