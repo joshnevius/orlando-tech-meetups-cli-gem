@@ -14,8 +14,13 @@ class OrlandoTechMeetups::CLI
         puts "#{the_group.name}"
         puts "#{the_group.about}"
         puts "The next meetup is: #{the_group.next_meetup}"
+        if the_group.next_meetup < 0.to_s
+          puts "Sorry, there's no meetup planned yet!"
+        end
         puts "\n"
-        more_info
+        puts "#{the_group.url}"
+        puts "Copy and paste this link into your browser and go check it out!"
+        puts "To go back to the menu, enter 'menu'. To exit, type 'exit'."
       elsif input == "menu"
         list_meetups
       else
@@ -37,19 +42,4 @@ class OrlandoTechMeetups::CLI
     end
   end
 
-  def more_info
-    puts "Would you like to join this upcoming meetup? yes/no"
-    input = gets.strip
-    if input == 'yes'
-      puts "Copy and paste this link into your browser and go RSVP."
-      puts "#{@meetups[input.to_i].url}"
-      puts "\n"
-      puts "To return to menu, type 'menu'. To exit, type 'exit'."
-    elsif input == 'no'
-      list_meetups
-    else
-      puts "I have no clue what you're trying to do."
-      list_meetups
-    end
-  end
 end
