@@ -19,7 +19,7 @@ class OrlandoTechMeetups::CLI
         end
         puts "\n"
         puts "#{the_group.url}"
-        puts "Copy and paste this link into your browser and go check it out!"
+        puts "Copy and paste the link above into your browser to check it out and learn more!"
         puts "To go back to the menu, enter 'menu'. To exit, type 'exit'."
       elsif input == "menu"
         list_meetups
