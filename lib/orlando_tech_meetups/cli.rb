@@ -31,7 +31,7 @@ class OrlandoTechMeetups::CLI
 
   def list_meetups
     puts "Hello and Welcome to the Orlando Tech Scene!"
-    puts "Which tech meetup group are you interested in learning about?" 
+    puts "Enter the number of the meetup group you're interested in learning about." 
     meetup
   end
 
