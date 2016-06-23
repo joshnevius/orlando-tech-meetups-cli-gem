@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
-  spec.bindir        = "exe"
+  spec.bindir        = "bin"
   spec.executables   = ["orlando_tech_meetups"]
   spec.require_paths = ["lib"]
 
