@@ -9,7 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["joshnevius"]
   spec.email         = ["joshnevius92@gmail.com"]
 
-  spec.summary       = "This Ruby Gem provides a CLI to learn about the different tech meetup groups in the central FL/Orlando area."
+  spec.summary       = "Check out all of your favorite tech meetups in Central Florida"
+  spec.description   = "This Ruby Gem provides a CLI to learn about the different tech meetup groups in the central FL/Orlando area."
   spec.homepage      = "https://github.com/joshnevius/orlando-tech-meetups-cli-gem"
   spec.license       = "MIT"
 
