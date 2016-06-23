@@ -45,7 +45,7 @@ class OrlandoTechMeetups::Meetups
     meetup.about = <<-DOC
     The Orlando Developers User Group is for developers of all skill levels in the Orlando area to come learn about improving yourself as a developer. We focus primarily on professional development and soft skills, but we will also be featuring technical talks and presentations on various different subjects that our community is interested in.
     DOC
-    meetup.next_meetup = doc.search("ul script h2").text.strip
+    meetup.next_meetup = doc.search("div li time span").first.text.strip
     meetup.url = "http://www.meetup.com/OrlandoDevs/"
     meetup 
   end
@@ -129,7 +129,7 @@ class OrlandoTechMeetups::Meetups
     meetup.about = <<-DOC
     Dedicated to educate about the Ruby language, and associated technologies. We typically meet on the second Thursday of the month providing a presentation and networking.
     DOC
-    meetup.next_meetup = doc.search("div li time span").first.text.strip
+    meetup.next_meetup = doc.search("ul script h2").text.strip
     meetup.url = "http://www.meetup.com/Orlando-Ruby/"
     meetup 
   end
@@ -217,5 +217,4 @@ class OrlandoTechMeetups::Meetups
     meetup.url = "http://www.meetup.com/iot-orlando/"
     meetup 
   end
-
 end

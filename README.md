@@ -1,6 +1,6 @@
 # Orlando Tech Meetups
 
-This Ruby Gem provides a CLI to learn about the different tech meetups in the central FL/Orlando area. 
+This Ruby Gem provides a CLI to learn about the different tech meetup groups in the central FL/Orlando area. 
 
 ## Installation
 

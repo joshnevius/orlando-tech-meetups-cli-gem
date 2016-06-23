@@ -1,11 +1,10 @@
 class OrlandoTechMeetups::CLI 
-
   def call
     list_meetups
     menu
   end
 
-  def menu
+ def menu
     input = nil
     while input != "exit" 
       input = gets.strip.downcase
@@ -41,5 +40,4 @@ class OrlandoTechMeetups::CLI
       puts "#{i}. #{meetups.name}"
     end
   end
-
 end
