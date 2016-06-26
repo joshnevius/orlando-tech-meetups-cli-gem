@@ -93,7 +93,7 @@ class OrlandoTechMeetups::Meetups
     meetup.about = <<-DOC
     Our mission is to create opportunities for anyone to learn, discuss, and share knowledge about the field of User Experience. We try to create opportunities for our community to learn about tools and techniques for UX Design from each other. Typically our meetups have a presentation paired with a workshop so that we can both learn and then do. We hope you will join us.
     DOC
-    meetup.next_meetup = doc.search("div li time span").first.text.strip
+    meetup.next_meetup = doc.search("ul script h2").text.strip
     meetup.url = "http://www.meetup.com/Downtown-UX-Meetup/"
     meetup 
   end
