@@ -10,6 +10,7 @@ Add this line to your application's Gemfile:
 gem 'orlando_tech_meetups'
 ```
 
+
 And then execute:
 
     $ bundle
