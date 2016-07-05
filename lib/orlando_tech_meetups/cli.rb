@@ -40,4 +40,5 @@ class OrlandoTechMeetups::CLI
       puts "#{i}. #{meetups.name}"
     end
   end
+
 end

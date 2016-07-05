@@ -81,7 +81,7 @@ class OrlandoTechMeetups::Meetups
     meetup.about = <<-DOC
     This group is for Orlando Front End Developers who work with HTML/CSS/Javascript regularly. Newbies are welcome too! We're all here to learn :)
     DOC
-    meetup.next_meetup = doc.search("ul script h2").text.strip
+    meetup.next_meetup = doc.search("div li time span").first.text.strip
     meetup.url = "http://www.meetup.com/Front-End-Orlando/"
     meetup 
   end
@@ -93,7 +93,7 @@ class OrlandoTechMeetups::Meetups
     meetup.about = <<-DOC
     Our mission is to create opportunities for anyone to learn, discuss, and share knowledge about the field of User Experience. We try to create opportunities for our community to learn about tools and techniques for UX Design from each other. Typically our meetups have a presentation paired with a workshop so that we can both learn and then do. We hope you will join us.
     DOC
-    meetup.next_meetup = doc.search("ul script h2").text.strip
+    meetup.next_meetup = doc.search("div li time span").first.text.strip
     meetup.url = "http://www.meetup.com/Downtown-UX-Meetup/"
     meetup 
   end
@@ -129,7 +129,7 @@ class OrlandoTechMeetups::Meetups
     meetup.about = <<-DOC
     Dedicated to educate about the Ruby language, and associated technologies. We typically meet on the second Thursday of the month providing a presentation and networking.
     DOC
-    meetup.next_meetup = doc.search("ul script h2").text.strip
+    meetup.next_meetup = doc.search("div li time span").first.text.strip
     meetup.url = "http://www.meetup.com/Orlando-Ruby/"
     meetup 
   end
@@ -165,7 +165,7 @@ class OrlandoTechMeetups::Meetups
     meetup.about = <<-DOC
     The Orlando JavaScript group is a place to talk about all things JavaScript.
     DOC
-    meetup.next_meetup = doc.search("ul script h2").text.strip
+    meetup.next_meetup = doc.search("div li time span").first.text.strip
     meetup.url = "http://www.meetup.com/OrlandoJS/"
     meetup 
   end
