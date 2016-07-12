@@ -1,8 +1,7 @@
 #!/usr/bin/env ruby
 
+require_relative "../lib/orlando_tech_meetups"
 
-require "bundler/setup"
-require "orlando_tech_meetups"
 
 
 OrlandoTechMeetups::CLI.new.call
