@@ -12,14 +12,11 @@ class OrlandoTechMeetups::CLI
         the_group = @meetups[input.to_i-1]
         puts "#{the_group.name}"
         puts "The next meetup is: #{the_group.next_meetup}"
-        if the_group.next_meetup < 0.to_s
-          puts "Sorry, there's no meetup planned yet!"
-        end
         puts "#{the_group.url}"
         puts "Copy and paste the link above into your browser to check it out and learn more!"
         puts "To go back to the menu, enter 'menu'. To exit, type 'exit'."
       elsif input == "menu"
-        list_meetups
+        meetup
       else
         puts "Hope to see you soon!"
       end
@@ -33,9 +30,10 @@ class OrlandoTechMeetups::CLI
   end
 
   def meetup
+    OrlandoTechMeetups::Meetups.scrape_meetups
     @meetups = OrlandoTechMeetups::Meetups.all
-    @meetups.each.with_index(1) do |key, value|
-      puts "#{key}. #{value.name}"
+    @meetups.each.with_index(1) do |meetup, i|
+      puts "#{i}. #{meetup.name}"
     end
   end
 
