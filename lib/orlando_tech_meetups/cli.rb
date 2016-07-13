@@ -4,7 +4,7 @@ class OrlandoTechMeetups::CLI
     menu
   end
 
- def menu
+  def menu
     input = nil
     while input != "exit" 
       input = gets.strip.downcase
@@ -25,12 +25,12 @@ class OrlandoTechMeetups::CLI
 
   def list_meetups
     puts "Hello and Welcome to the Orlando Tech Scene!"
-    puts "Enter the number of the meetup group you're interested in going to:" 
+    puts "Loading meetups"
     meetup
+    puts "Enter the number of the meetup group you're interested in going to:" 
   end
 
   def meetup
-    OrlandoTechMeetups::Meetups.scrape_meetups
     @meetups = OrlandoTechMeetups::Meetups.all
     @meetups.each.with_index(1) do |meetup, i|
       puts "#{i}. #{meetup.name}"

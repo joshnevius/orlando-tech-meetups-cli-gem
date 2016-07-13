@@ -1,4 +1,4 @@
-class OrlandoTechMeetups::Scraper
+ class OrlandoTechMeetups::Scraper
 
   def scraper(meetup_url)
     doc = Nokogiri::HTML(open(meetup_url))

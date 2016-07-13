@@ -4,7 +4,8 @@ class OrlandoTechMeetups::Meetups
    @@all = []
 
   def self.all
-    @@all 
+    self.scrape_meetups if @@all == [] 
+    @@all
   end
 
   def save 
@@ -27,9 +28,9 @@ class OrlandoTechMeetups::Meetups
   def self.scrape_meetups
     s = OrlandoTechMeetups::Scraper.new
     MEETUP_URL.each do |url|
-      s.scraper(url)
+      print "."
+      s.scraper(url) 
     end
+    puts "\n"
   end     
-
-
 end
