@@ -14,7 +14,7 @@ class OrlandoTechMeetups::Meetups
 
   MEETUP_URL = [
     "http://www.meetup.com/Code-For-Orlando/",
-    "http://meetup.com/orlando-tech/",
+    "http://www.meetup.com/orlando-tech/",
     "http://www.meetup.com/The-Iron-Yard-Orlando/",
     "http://www.meetup.com/Front-End-Orlando/",
     "http://www.meetup.com/Downtown-UX-Meetup/",
@@ -22,7 +22,8 @@ class OrlandoTechMeetups::Meetups
     "http://www.meetup.com/OrlandoJS/",
     "http://www.meetup.com/orlandodojo/",
     "http://www.meetup.com/Central-Florida-RPi-Users-Group/",
-    "http://www.meetup.com/iot-orlando/"
+    "http://www.meetup.com/iot-orlando/",
+    "http://www.meetup.com/OrlandoDevs/"
   ]
 
   def self.scrape_meetups

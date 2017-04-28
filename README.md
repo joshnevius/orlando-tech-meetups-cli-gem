@@ -4,26 +4,13 @@ This Ruby Gem provides a CLI to learn about the different tech meetup groups in 
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'orlando_tech_meetups'
-```
-
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
     $ gem install orlando_tech_meetups
 
 ## Usage
 
 Type the below and follow the on screen prompts.
 
-$ orlando_tech_meetups
+    $ orlando_tech_meetups
 
 ## Development
 

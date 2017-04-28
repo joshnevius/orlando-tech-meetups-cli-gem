@@ -12,8 +12,9 @@ class OrlandoTechMeetups::CLI
         the_group = @meetups[input.to_i-1]
         puts "#{the_group.name}"
         puts "The next meetup is: #{the_group.next_meetup}"
+        puts "To create a new meetup group, copy and paste the link below into Chrome or Firefox..."
+        puts "Internet Explorer is not a browser. It's a mistake."
         puts "#{the_group.url}"
-        puts "Copy and paste the link above into your browser to check it out and learn more!"
         puts "To go back to the menu, enter 'menu'. To exit, type 'exit'."
       elsif input == "menu"
         meetup
